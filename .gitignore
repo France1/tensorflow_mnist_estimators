@@ -1,6 +1,10 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 
+# notebook checkpoints
+.ipynb_chekpoints
+*./ipynb_checkpoints/*
+
 # training data
 notebooks/MNIST-data
 *.gz
