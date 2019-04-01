@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# training data
+notebooks/MNIST-data
+*.gz
+
+# saved models
+models/
+models_for_serving/
