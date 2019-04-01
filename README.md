@@ -5,7 +5,7 @@ A tutorial to understand how to train, evaluate, and serve Tensorflow Estimators
 - an alternative way to Tensorflow Serving to deploy predictions
 
 ## Model definition
-The model consists of a CNN estimator to predict digits from the MNIST dataset from the [official Tensorflow tutorial](https://www.tensorflow.org/tutorials/estimators/cnn), which is trained and explained in the notebook `notebooks/estimator_model.ipynb`
+The model consists of a CNN estimator to predict digits from the MNIST dataset from the [official Tensorflow tutorial](https://www.tensorflow.org/tutorials/estimators/cnn), which is trained in the notebook `notebooks/estimator_model.ipynb`. The model predict the number in the image as `classes` and the corresponding `probabilities` of the predictions.
 
 ### Input data
 Input data are defined using `tf.data.Dataset.from_tensor_slices` as it allows more control compared to `tf.estimator.inputs.numpy_input_fn` used in the official tutorials. This produces a generator that is easier to navigate for debugging purposes
@@ -47,7 +47,7 @@ python python/grpc_client.py \
   --image ./data/0.png \
   --model mnist
 ```
-which should return as classes:
+which should return as predicted `classes`:
 ```
 outputs {
   key: "classes"
