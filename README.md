@@ -64,37 +64,8 @@ outputs {
     int64_val: 0
   }
 }
-outputs {
-  key: "probabilities"
-  value {
-    dtype: DT_FLOAT
-    tensor_shape {
-      dim {
-        size: 1
-      }
-      dim {
-        size: 10
-      }
-    }
-    float_val: 1.0
-    float_val: 0.0
-    float_val: 0.0
-    float_val: 0.0
-    float_val: 0.0
-    float_val: 0.0
-    float_val: 0.0
-    float_val: 0.0
-    float_val: 0.0
-    float_val: 0.0
-  }
-}
-model_spec {
-  name: "mnist"
-  version {
-    value: 1
-  }
-  signature_name: "serving_default"
-}
+
+...
 
 ```
 
