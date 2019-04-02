@@ -70,7 +70,7 @@ outputs {
 ```
 
 ## REST API serving
-The REST API client `python/rest_client.py` is inspired by [this article](https://medium.com/@avidaneran/tensorflow-serving-rest-vs-grpc-e8cef9d4ff62) is used to request predictions from port 8501:
+The REST API client `python/rest_client.py` is inspired by [this article](https://medium.com/@avidaneran/tensorflow-serving-rest-vs-grpc-e8cef9d4ff62). It is used to request predictions from port 8501:
 ```
 python python/rest_client.py \
   --image ./data/0.png \
