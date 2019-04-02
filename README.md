@@ -21,7 +21,7 @@ Note that while the loss (default metrics) for the trainining and evaluation set
 The serialized trained model can be loaded in session and used for prediction as explained in this [article](https://guillaumegenthial.github.io/serving-tensorflow-estimator.html). This is particularly useful if the deployement is done in Flask
 
 ## Model serving with Tensorflow Serving
-This is done following [this article](https://medium.com/@yuu.ishikawa/serving-pre-modeled-and-custom-tensorflow-estimator-with-tensorflow-serving-12833b4be421). 
+This part is mostly copying [this article](https://medium.com/@yuu.ishikawa/serving-pre-modeled-and-custom-tensorflow-estimator-with-tensorflow-serving-12833b4be421), including the Docker file. 
 A dockerized version of tensorflo-model-server is built by running:
 ```
 docker build --rm -f Dockerfile -t tensorflow-model-server .
@@ -70,7 +70,7 @@ outputs {
 ```
 
 ## REST API serving
-The REST API client `python/rest_client.py` is used to request predictions from port 8501:
+The REST API client `python/rest_client.py` is inspired by [this article](https://medium.com/@avidaneran/tensorflow-serving-rest-vs-grpc-e8cef9d4ff62) is used to request predictions from port 8501:
 ```
 python python/rest_client.py \
   --image ./data/0.png \
