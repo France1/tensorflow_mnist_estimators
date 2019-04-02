@@ -99,7 +99,7 @@ model_spec {
 ```
 
 ## REST API serving
-The REST API client `python/rest_client.py` is used to request predictions from port 8500:
+The REST API client `python/rest_client.py` is used to request predictions from port 8501:
 ```
 python python/rest_client.py \
   --image ./data/0.png \
