@@ -1,5 +1,5 @@
 # tensorflow_mnist_estimators
-A tutorial to understand how to train, evaluate, and serve Tensorflow Estimators models inspired by [this article](https://medium.com/@yuu.ishikawa/serving-pre-modeled-and-custom-tensorflow-estimator-with-tensorflow-serving-12833b4be421). Compared to this work the main additions are:
+A tutorial to understand how to train, evaluate, and serve Tensorflow Estimators models inspired by [this article](https://medium.com/@yuu.ishikawa/serving-pre-modeled-and-custom-tensorflow-estimator-with-tensorflow-serving-12833b4be421). Compared to the latter project, here the main additions are:
 - flexible input pipeline functions for training and prediction
 - a training and evaluation routine that output metrics in real time
 - an alternative way to Tensorflow Serving to deploy predictions
